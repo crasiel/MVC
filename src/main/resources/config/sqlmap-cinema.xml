@@ -28,14 +28,15 @@
 	
 	
 	<insert id="insertTheater_info" parameterType="theaterInfo">
-		insert into theater_info values(#{screen_code}, #{movie_code}, #{movie_title}, #{start_date}, #{end_date},  to_char(#{start_time},'FM0000'),  to_char(#{end_time},'FM0000'), #{runtime}, #{movie_audit}, #{movie_type})
+		insert into theater_info (screen_code, movie_code, movie_title, start_date, end_date, start_time, end_time, runtime, movie_audit, movie_type)
+			values(#{screen_code}, #{movie_code}, #{movie_title}, #{start_date}, #{end_date},  to_char(#{start_time},'FM0000'),  to_char(#{end_time},'FM0000'), #{runtime}, #{movie_audit}, #{movie_type})
 	
 	</insert>
 	
 	<select id="selectDateList" parameterType="HashMap" resultType="theaterInfo">
 		select theater_info.start_time, theater_info.end_time, theater_info.movie_title, theater_info.movie_type, 
 		theater_info.screen_code, theater.seat_amount from theater_info, theater
-		where theater_info.screen_code like '%${branch}%' and theater_info.movie_title=#{movie_title} and theater_info.screen_code = theater.screen_code order by start_time asc
+		where theater_info.end_date >= to_char(SYSDATE, 'YYYY-MM-DD') and theater_info.screen_code like '%${branch}%' and theater_info.movie_title=#{movie_title} and theater_info.screen_code = theater.screen_code order by start_time asc
 	</select>
 </mapper>
 

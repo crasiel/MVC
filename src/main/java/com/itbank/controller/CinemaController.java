@@ -80,13 +80,18 @@ public class CinemaController {
 	@ResponseBody
 	@PostMapping("/insertTheaterInfo")
 	public String insertTheater_info(Theater_infoDTO info) {
-		
+		System.out.println(info.getRuntime());
 		String startTime = info.getStart_time();
 		startTime = startTime.replace(":", "");
 		info.setStart_time(startTime);
 		int hour = (info.getRuntime()/60); 
 		int minute = (info.getRuntime()%60);
-		String runTime = Integer.toString(hour) + Integer.toString(minute);
+		String runTime = "";
+		if(minute < 10) {
+			runTime = Integer.toString(hour)  + 0 + Integer.toString(minute);
+		}else {
+			runTime = Integer.toString(hour) + Integer.toString(minute);
+		}
 		info.setRuntime(Integer.parseInt(runTime));
 		int end_time = (Integer.parseInt(info.getStart_time()) + info.getRuntime());
 		if((end_time % 100) >= 60 ) {

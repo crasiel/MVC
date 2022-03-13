@@ -227,7 +227,7 @@ border-top: outset;
             <label for="nusable">사용안함</label><input type="radio" name="usable"  id="nusable2" value="n" onchange="createdate2()">
         </p>
         <p id="ndate2" class="clearfix"></p>
-        <p><input type="submit" class="btn" value="상영관생성"></p>
+        <p><input type="submit" class="btn" value="상영관수정"></p>
     </form>
     </div>
    </div> 

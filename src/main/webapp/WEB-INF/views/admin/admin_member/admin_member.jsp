@@ -5,7 +5,7 @@
 <script>
 // 주소 api
 function goPopup(){
-	var pop = window.open("/team/admin/addrPopup","pop","width=570,height=420, scrollbars=yes, resizable=yes"); 
+	var pop = window.open("${cpath}/admin/addrPopup","pop","width=570,height=420, scrollbars=yes, resizable=yes"); 
 }
 
 
@@ -189,7 +189,7 @@ var choice =  document.querySelector('.con'+t)
 						</p>
 						</c:if>	
 					</c:forEach>
-					<article>
+					<!-- <article>
 						<c:if test="${paging.prev }">
 						   	<a href="${cpath }/admin/admin_member?page=${paging.begin-1}">
 						   	[이전]</a>
@@ -201,7 +201,7 @@ var choice =  document.querySelector('.con'+t)
 						   	<a href="${cpath }/admin/admin_member?page=${paging.end+1}">
 						   	[다음]</a>
 					   	</c:if>
-					</article>
+					</article> -->
 					</div>
 					
 				</c:if>
@@ -211,14 +211,14 @@ var choice =  document.querySelector('.con'+t)
                 <h2>사원입력</h2>
                 <div class="insertForm">
 	                <form id="insertForm">
-						이름 &nbsp; &nbsp; &nbsp; <input type="text" name="admin_name" placeholder="이름"><br>
+						이름 &nbsp; &nbsp; &nbsp; <input type="text" name="admin_name" placeholder="이름" required><br>
 <!-- 						<input type="password" name="admin_password" placeholder="비밀번호"><br> -->
-						전화번호 <input type="tel" name="admin_phone" placeholder="전화번호"><br>
-						주소 &nbsp; &nbsp;  &nbsp; <input type="text" name="admin_addr" id="admin_addr" placeholder="주소" style="width : 500px;">
+						전화번호 <input type="tel" name="admin_phone" placeholder="전화번호" required><br>
+						주소 &nbsp; &nbsp;  &nbsp; <input type="text" name="admin_addr" id="admin_addr" placeholder="주소" style="width : 500px;" required>
 							<input type="button" onClick="goPopup()" class="btn1" value="주소검색" style="width : 150px;margin-left : 450px;">
 						<br>
-						근무지&nbsp;&nbsp;&nbsp; <select name="admin_store">
-				        		<option>지점을 선택해 주세요.</option>
+						근무지&nbsp;&nbsp;&nbsp; <select name="admin_store" required>
+				        		<option value="">지점을 선택해 주세요.</option>
 					        	<optgroup label="서울">
 					        		<option value ="강남">강남점</option>
 					        		<option value ="홍대">홍대점</option>
@@ -240,8 +240,9 @@ var choice =  document.querySelector('.con'+t)
 					        		<option value ="강릉">강릉점</option>
 					        	</optgroup>
 				        </select><br>
-						입사일&nbsp;&nbsp;&nbsp;  <input type="date" name="admin_jday"><br>
-						직급&nbsp; &nbsp; &nbsp;&nbsp;  <select name="admin_dept">
+						입사일&nbsp;&nbsp;&nbsp;  <input type="date" name="admin_jday" required><br>
+						직급&nbsp; &nbsp; &nbsp;&nbsp;  <select name="admin_dept" required>
+							<option value="">직급을 선택하세요</option>
 							<option value="1">총괄관리자</option>
 							<option value="2">지점장</option>
 							<option value="3">매니저</option>
@@ -299,6 +300,7 @@ var choice =  document.querySelector('.con'+t)
 						</p>	
 					</c:if>
 					</c:forEach>
+					<!-- 
 					<article>
 						<c:if test="${paging.prev }">
 						   	<a href="${cpath }/admin/admin_member?page=${paging.begin-1}">
@@ -312,6 +314,7 @@ var choice =  document.querySelector('.con'+t)
 						   	[다음]</a>
 					   	</c:if>
 					</article>
+					 -->
 					</div>
 
 				</c:if>

@@ -94,7 +94,7 @@ var check3 = false
 			}
 		}
 	function goPopup(){
-		var pop = window.open("/team/member/addrPopup","pop","width=570,height=420, scrollbars=yes, resizable=yes"); 
+		var pop = window.open("${cpath}/member/addrPopup","pop","width=570,height=420, scrollbars=yes, resizable=yes"); 
 	}
 	
 	

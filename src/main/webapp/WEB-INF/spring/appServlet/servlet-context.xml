@@ -15,7 +15,7 @@
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
-	<resources mapping="/upload/**" location="file:D:/upload/" />
+	<resources mapping="/upload/**" location="file:C:/upload/" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -39,7 +39,10 @@
 	<interceptors>
 		<interceptor>
 			<mapping path="/admin/**"/>
-				<exclude-mapping path="/admin/login"/>				
+				<exclude-mapping path="/admin/login"/>
+				<exclude-mapping path="/admin/addr"/>				
+				<exclude-mapping path="/admin/addrPopup"/>
+				<exclude-mapping path="/admin/admin_member/**"/>
 			<beans:bean id="loginInterceptor" class="com.itbank.interceptor.LoginInterceptor" />
 		</interceptor>
 		<interceptor>

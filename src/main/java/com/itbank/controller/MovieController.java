@@ -265,6 +265,8 @@ public class MovieController {
     	for(int i=0; i < dateList.size(); i++) {
     		int s_s = Integer.parseInt(dateList.get(i).getStart_date().replace("-", "").substring(4));
 			int s_e = Integer.parseInt(dateList.get(i).getEnd_date().replace("-", "").substring(4));
+			System.out.println("시작일 : " + s_s);
+			System.out.println("종료일 : " + s_e);
 			if(s_s <= date && date <= s_e) {
 				List<Theater_infoDTO> movieList = cs.selectDateList(branch, movie_title);
 				System.out.println(movieList.toString());

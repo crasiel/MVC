@@ -95,6 +95,7 @@
 document.forms.Theater_info.onsubmit = function(event){
 	event.preventDefault()
 	const formData = new FormData(event.target)	
+	console.log(formData)
 	const url = "${cpath}/admin/cinema/insertTheaterInfo"
 		const opt = {
 			method: 'POST',
@@ -111,7 +112,7 @@ document.forms.Theater_info.onsubmit = function(event){
 			if(+text == 0){
 				alert("입력 시간을 확인해 주세요.")
 			}else{
-				alert(text + "\n입력 시간이 중복됩니다.")
+				alert("영화 상영시간이 중복됩니다.")
 			}
 		}
 	})

@@ -77,6 +77,7 @@
     var cbranch='';
     var cmovie='';
     var cday='';
+    var arrtitle = '';
     
         $('#choice1 p').on('click', function(){
             $(this).css({
@@ -150,7 +151,18 @@
 								}
 	    					}else{
 	    						span.className = key
-	    						span.innerHTML = '<b>'+value+'</b>'
+	    						/* if(value.length >= 18 && value.length < 25){
+	    							span.innerHTML = '<b style="font-size:14px;">'+value+'</b>'
+	    						}else if(value.length >= 25){ */
+	    						if(value.length >= 18){			// 제목이 크거나, 시리즈 : 부제 있는 경우 ':' 기준으로 잘라서 제목 입력
+	    							var arr = value.split(':')
+	    							span.innerHTML = '<b style="display : inline-block;font-size:16px; line-height : 18px;">'+ arr[0] +":"
+	    											+ '<br>' + '<span style="font-size : 12px; line-height : 12px; color : darkblue">' + arr[1] +'</span></b>'
+	    							
+	    						}else{
+	    							span.innerHTML = '<b>'+value+'</b>'
+	    						}
+	    						
 	    					}
 	    					li.appendChild(span)
 							theater_info_movie.appendChild(li)
@@ -176,6 +188,7 @@
             });
             const t2= $(this).find('span').text();
             cmovie= $(this).find('b').text();
+
             List();
         })
 
@@ -202,8 +215,8 @@
                 w = 0
                 li.setAttribute("style", "color:red")
             }
-            p1.textContent = day
-            if(month < 10){
+            p1.textContent = ("0" + month).slice(-2) +  ("0" + day).slice(-2);
+/*             if(month < 10){
             	if(day < 10){
 	            	p1.textContent = '0' + month + '0' + day      //월과 일을 같이 표시하고 싶으면 그렇게 하기
             	}else if(day >= 10){
@@ -215,7 +228,7 @@
                	}else if(day >= 10){
     	            p1.textContent = month  + day      //월과 일을 같이 표시하고 싶으면 그렇게 하기
                 	}
-            }
+            } */
             span.textContent = week[w]
             
             switch(month){	// 월 바뀔때마다 날짜 초기화
@@ -227,6 +240,7 @@
    			 }
             w++
             day++
+            console.log(day)
             li.appendChild(p1)
             li.appendChild(span)
             dateForm.appendChild(li)
@@ -244,7 +258,7 @@
         console.log(t3)
         cday =t3;
         List();
-    })
+    });
     
     function List(){
 		const movieList = document.getElementById('movieList')

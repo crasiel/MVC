@@ -5,26 +5,28 @@
 
     <section id="slider">
         <div class="slider-main">
+            
             <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Black/Black_1920774.jpg" alt="">
+                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Kings/1221/Kings_1920774.jpg" alt="">
             </div>
             <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Jam/Jam_1920774.jpg" alt="">
+                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Mat/1221/Mat_1920774.jpg" alt="">
             </div>
-            <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Room/Room_1920774.jpg" alt="">
-            </div>
+            
             <div class="slider-item">
                 <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Ella/Ella_1920774.jpg" alt="">
             </div>
             <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Dark/0622/Dark_1920774.jpg" alt="">
+                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Sence/0805/Sence_1920774.jpg" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Black/Black_1920774.jpg" alt="">
             </div>
             <div class="slider-item">
                 <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Luca/0602/Luca_1920774.jpg" alt="">
             </div>
             <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Place/0602/Place_1920774.jpg" alt="">
+                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/West/West_1920774.jpg" alt="">
             </div>
         </div>
     </section>
@@ -33,13 +35,13 @@
         <div id="vedioWrap">       
         <i class="xi-close xi-4x" id="close"></i>
         <div class="layer_contents">
-           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Black/Black_1280720.mp4" autoplay muted></video>
-           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Jam/Jam_1280720.mp4" autoplay muted></video>
-           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Room/Room_1280720.mp4" autoplay muted></video>
+           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Kings/1221/Kings_1280720.mp4" autoplay muted></video>
+           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Mat/1221/Mat_1280720.mp4" autoplay muted></video>
            <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Ella/Ella_1280720.mp4" autoplay muted></video>
-            <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Dark/Dark_1280720.mp4" autoplay muted></video>
+            <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Sence/0805/Sence_1280720.mp4" autoplay muted></video>
+           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Black/Black_1280720.mp4" autoplay muted></video>
             <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Luca/Luca_1280720.mp4" autoplay muted></video>
-            <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Place/Place_1280720.mp4" autoplay muted></video>
+            <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/West/West_1280720.mp4" autoplay muted></video>
             
         </div>
     </div>
@@ -81,31 +83,31 @@
                 <ul class="clearfix">
                     <li>
                         <a href="#">
-                            <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17387_103_1.jpg">
+                            <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202112/17857_101_1.jpg">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17420_103_1.jpg">
+                            <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202002/15011_101_1.jpg">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202005/15586_103_1.jpg">
+                            <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202112/18082_101_1.jpg">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202101/16908_103_1.jpg">
+                            <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/West/West_184262.jpg">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17450_103_1.jpg">
+                            <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202111/18041_103_1.jpg">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                         </a>
                     </li>

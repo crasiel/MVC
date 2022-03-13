@@ -69,7 +69,7 @@ public class KakaoMemberController {
 		
 		String grant_type = "authorization_code";
 		String client_id ="7d7a89444c3dc7117978512358c75028";
-		String redirect_uri = "http://localhost:8080/team/member/auth/kakao/callback";
+		String redirect_uri = "http://localhost:8080/member/auth/kakao/callback";
 	
 		//HttpBody 오브젝트 생성
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();

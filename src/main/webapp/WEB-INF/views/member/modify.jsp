@@ -63,7 +63,7 @@
 	<c:if test="${not empty msg }">
 		<script>
 			alert('${msg}')
-			location.href="${capth}/team/"
+			location.href="${cpath}/"
 		</script>
 	</c:if>
 	</div>
@@ -93,7 +93,7 @@
 	}
 
 	function goPopup(){
-		var pop = window.open("/team/member/addrPopup","pop","width=570,height=420, scrollbars=yes, resizable=yes"); 
+		var pop = window.open("${cpath}/member/addrPopup","pop","width=570,height=420, scrollbars=yes, resizable=yes"); 
 	}
 	
 	
