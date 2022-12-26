@@ -7,23 +7,23 @@
         <div class="slider-main">
             
             <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Kings/1221/Kings_1920774.jpg" alt="">
+                <img src="https://caching2.lottecinema.co.kr/lotte_image/2022/AA/1216/AA_1920774.jpg" alt="">
             </div>
             <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Mat/1221/Mat_1920774.jpg" alt="">
+                <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202211/19162_201_1.jpg" alt="" style="width : auto; height : 100%; margin : 0 auto;">
             </div>
             
             <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Ella/Ella_1920774.jpg" alt="">
+                <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202212/19224_201_1.jpg" alt="" style="width : auto; height : 100%; margin : 0 auto;">
             </div>
             <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Sence/0805/Sence_1920774.jpg" alt="">
+                <img src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202212/19239_201_1.jpg" alt="" style="width : auto; height : 100%; margin : 0 auto;">
             </div>
             <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Black/Black_1920774.jpg" alt="">
+                <img src="https://caching2.lottecinema.co.kr/lotte_image/2022/SW/SW_1920774.jpg" alt="">
             </div>
             <div class="slider-item">
-                <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/Luca/0602/Luca_1920774.jpg" alt="">
+                <img src="https://caching2.lottecinema.co.kr/lotte_image/2022/FF/FF_1920774.jpg" alt="">
             </div>
             <div class="slider-item">
                 <img src="https://caching2.lottecinema.co.kr/lotte_image/2021/West/West_1920774.jpg" alt="">
@@ -35,12 +35,12 @@
         <div id="vedioWrap">       
         <i class="xi-close xi-4x" id="close"></i>
         <div class="layer_contents">
-           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Kings/1221/Kings_1280720.mp4" autoplay muted></video>
-           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Mat/1221/Mat_1280720.mp4" autoplay muted></video>
-           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Ella/Ella_1280720.mp4" autoplay muted></video>
-            <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Sence/0805/Sence_1280720.mp4" autoplay muted></video>
-           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Black/Black_1280720.mp4" autoplay muted></video>
-            <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Luca/Luca_1280720.mp4" autoplay muted></video>
+           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2022/AA/1216/AA_1280720.mp4" autoplay muted></video>
+           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/202211/19162_301_1.mp4" autoplay muted></video>
+           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/202212/19224_301_1.mp4" autoplay muted></video>
+            <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/202212/19239_301_1.mp4" autoplay muted></video>
+           <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2022/SW/SW_1280720.mp4" autoplay muted></video>
+            <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2022/FF/FF_1280720.mp4" autoplay muted></video>
             <video height="100%" width="100%" controls id="vdoPlayer" src="https://caching2.lottecinema.co.kr/lotte_image/2021/West/West_1280720.mp4" autoplay muted></video>
             
         </div>

@@ -63,7 +63,6 @@ public class AdminController {
 	@PostMapping("/login")
 	public ModelAndView login(Admin_memberDTO dto, HttpSession session) {
 	
-		
 		String viewName = "redirect:/admin";
 		Admin_memberDTO ad_login = as.login(dto);
 		
